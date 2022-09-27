@@ -30,6 +30,6 @@ public class ExecuteTest {
     @AfterClass
     public static void tearDown(){
         System.out.println("Finalizou ");
-        driver.quit();
+       // driver.quit();
     }
 }

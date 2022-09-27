@@ -50,28 +50,28 @@ formatter.match({
   "location": "PesquisaSteps.que_acesso_o_site_SOC_blog()"
 });
 formatter.result({
-  "duration": 4865174900,
+  "duration": 6083495400,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.informo_um_assunto_em_procurar()"
 });
 formatter.result({
-  "duration": 80789400,
+  "duration": 66279600,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.clico_em_pesquisar()"
 });
 formatter.result({
-  "duration": 1322498000,
+  "duration": 1369420300,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.abre_tela_de_com_resultado_da_pesquisa()"
 });
 formatter.result({
-  "duration": 21248200,
+  "duration": 308869200,
   "status": "passed"
 });
 formatter.scenario({
@@ -132,56 +132,56 @@ formatter.match({
   "location": "PesquisaSteps.que_ao_entrar_no_site_SOC()"
 });
 formatter.result({
-  "duration": 1174116400,
+  "duration": 1658644100,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.acesso_no_menu_Funcionalidade()"
 });
 formatter.result({
-  "duration": 128773300,
+  "duration": 129818600,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.clico_na_opção_Rede_SOCNET()"
 });
 formatter.result({
-  "duration": 1351044300,
+  "duration": 1075540000,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.clico_em_Buscar_credenciados()"
 });
 formatter.result({
-  "duration": 1656634500,
+  "duration": 1750702700,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.preencho_o_fitro_para_busca_credenciado()"
 });
 formatter.result({
-  "duration": 1862211100,
+  "duration": 1834175600,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.clico_botao_pesquisar()"
 });
 formatter.result({
-  "duration": 64472900,
+  "duration": 77215300,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.seleciono_o_credenciado()"
 });
 formatter.result({
-  "duration": 3278570600,
+  "duration": 3318677800,
   "status": "passed"
 });
 formatter.match({
   "location": "PesquisaSteps.verificoPerfilCredenciado()"
 });
 formatter.result({
-  "duration": 36227600,
+  "duration": 41716000,
   "status": "passed"
 });
 });

@@ -1,29 +1,26 @@
 package pages;
 
-import cucumber.api.java.pt.Quando;
+import org.codehaus.plexus.util.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
-public class HomePage {
+public class Pages {
     WebDriver driver;
-    public HomePage(WebDriver driver) {
+
+    public Pages(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void acessarAplicacao() {
+    public void acessarAplicacao() throws IOException {
         driver.manage().window().maximize();
         driver.get(" https://ww2.soc.com.br/blog/");
-        Assert.assertEquals("Não acessou a aplicação",true, driver.findElement(By.id("n2-ss-18item2")).isDisplayed());
-    }
-    public void informarAssuntoParaPesquisa(){
-        driver.findElement(By.cssSelector(".elementor-search-form__container:nth-child(1) > .elementor-search-form__input")).
-                sendKeys("IMPRENSA");
+        Assert.assertTrue("Não acessou a aplicação", driver.findElement(By.id("n2-ss-18item2")).isDisplayed());
     }
 
     public void clicarBtnPesquisa(){
@@ -56,10 +53,16 @@ public class HomePage {
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".fa-search")));
         driver.findElement(By.cssSelector(".fa-search")).click();
     }
+
     public void btnexibirPerfilCredenciado() {
         WebElement myDynamicElement = (new WebDriverWait(driver, Duration.ofSeconds(10)))
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".btn-estreito")));
         driver.findElement(By.cssSelector(".btn-estreito")).click();
     }
 
+    public void CapturaScreenshot(WebDriver driver, String fileName) throws IOException {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File file = ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File("C:\\Projetos Java\\ProjetoSOC\\IMG\\" + fileName + ""));
+    }
 }

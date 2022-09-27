@@ -8,38 +8,41 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.HomePage;
+import pages.Pages;
 import runner.ExecuteTest;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class PesquisaSteps extends ExecuteTest {
 
-    HomePage homePage = new HomePage(driver);
+    Pages homePage = new Pages(driver);
 
     @Dado("^que acesso o site SOC blog$")
-    public void que_acesso_o_site_SOC_blog() {
+    public void que_acesso_o_site_SOC_blog() throws IOException {
         homePage.acessarAplicacao();
+        homePage.CapturaScreenshot(driver, "Tela inicial.png");
     }
 
     @Quando("^informo um assunto em procurar$")
     public void informo_um_assunto_em_procurar() {
-        homePage.informarAssuntoParaPesquisa();
+        driver.findElement(By.cssSelector(".elementor-search-form__container:nth-child(1) > .elementor-search-form__input")).
+                sendKeys("IMPRENSA");
     }
 
     @Quando("^clico em pesquisar$")
     public void clico_em_pesquisar() {
         homePage.clicarBtnPesquisa();
-
     }
 
     @Então("^abre tela de com resultado da pesquisa$")
-    public void abre_tela_de_com_resultado_da_pesquisa() {
+    public void abre_tela_de_com_resultado_da_pesquisa() throws IOException {
+
         homePage.resultadoPesquisa();
     }
 
     @Dado("^que ao entrar no site SOC$")
-    public void que_ao_entrar_no_site_SOC() throws InterruptedException {
+    public void que_ao_entrar_no_site_SOC() throws InterruptedException, IOException {
         homePage.acessarAplicacao();
     }
 
@@ -78,7 +81,7 @@ public class PesquisaSteps extends ExecuteTest {
         WebElement myDynamicElement = (new WebDriverWait(driver, Duration.ofSeconds(10)))
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div:nth-child(1) > .estrutura-resultados-mapa .cidade-empresa")));
         driver.findElement(By.cssSelector("div:nth-child(1) > .estrutura-resultados-mapa .cidade-empresa")).click();
-        driver.findElement(By.xpath("(//button[@type=\'button\'])[2]")).click();
+        driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
     }
 
     @Então("^Verificar perfil do credenciado$")

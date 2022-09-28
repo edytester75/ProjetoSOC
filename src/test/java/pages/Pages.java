@@ -63,6 +63,6 @@ public class Pages {
     public void CapturaScreenshot(WebDriver driver, String fileName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file, new File("C:\\Projetos Java\\ProjetoSOC\\IMG\\" + fileName + ""));
+        FileUtils.copyFile(file, new File("C:\\Projetos Java\\ProjetoSOC\\IMG\\" + fileName + ".png"));
     }
 }

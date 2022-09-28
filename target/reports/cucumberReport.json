@@ -6,10 +6,10 @@
         "value": "# language: pt"
       }
     ],
-    "line": 3,
+    "line": 4,
     "elements": [
       {
-        "line": 8,
+        "line": 9,
         "name": "Busca no blog",
         "description": "",
         "id": "realizar-busca-do-blog-e-busca-credenciado;busca-no-blog",
@@ -18,10 +18,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6083495400,
+              "duration": 4821182700,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "que acesso o site SOC blog",
             "match": {
               "location": "PesquisaSteps.que_acesso_o_site_SOC_blog()"
@@ -30,10 +30,10 @@
           },
           {
             "result": {
-              "duration": 66279600,
+              "duration": 403947600,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "informo um assunto em procurar",
             "match": {
               "location": "PesquisaSteps.informo_um_assunto_em_procurar()"
@@ -42,10 +42,10 @@
           },
           {
             "result": {
-              "duration": 1369420300,
+              "duration": 1311989400,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "clico em pesquisar",
             "match": {
               "location": "PesquisaSteps.clico_em_pesquisar()"
@@ -54,10 +54,10 @@
           },
           {
             "result": {
-              "duration": 308869200,
+              "duration": 294333400,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "abre tela de com resultado da pesquisa",
             "match": {
               "location": "PesquisaSteps.abre_tela_de_com_resultado_da_pesquisa()"
@@ -67,13 +67,13 @@
         ],
         "tags": [
           {
-            "line": 7,
+            "line": 8,
             "name": "@Pesquisa-Blog"
           }
         ]
       },
       {
-        "line": 15,
+        "line": 16,
         "name": "Busca de Credenciado",
         "description": "",
         "id": "realizar-busca-do-blog-e-busca-credenciado;busca-de-credenciado",
@@ -82,10 +82,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1658644100,
+              "duration": 1414946200,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "que ao entrar no site SOC",
             "match": {
               "location": "PesquisaSteps.que_ao_entrar_no_site_SOC()"
@@ -94,10 +94,10 @@
           },
           {
             "result": {
-              "duration": 129818600,
+              "duration": 563621500,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "acesso no menu Funcionalidade",
             "match": {
               "location": "PesquisaSteps.acesso_no_menu_Funcionalidade()"
@@ -106,10 +106,10 @@
           },
           {
             "result": {
-              "duration": 1075540000,
+              "duration": 1450587900,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "clico na opção Rede SOCNET",
             "match": {
               "location": "PesquisaSteps.clico_na_opção_Rede_SOCNET()"
@@ -118,10 +118,10 @@
           },
           {
             "result": {
-              "duration": 1750702700,
+              "duration": 355804200,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "clico em Buscar credenciados",
             "match": {
               "location": "PesquisaSteps.clico_em_Buscar_credenciados()"
@@ -130,10 +130,10 @@
           },
           {
             "result": {
-              "duration": 1834175600,
+              "duration": 1056294700,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "preencho o fitro para busca credenciado",
             "match": {
               "location": "PesquisaSteps.preencho_o_fitro_para_busca_credenciado()"
@@ -142,10 +142,10 @@
           },
           {
             "result": {
-              "duration": 77215300,
+              "duration": 354215800,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "clico no botão pesquisar",
             "match": {
               "location": "PesquisaSteps.clico_botao_pesquisar()"
@@ -154,10 +154,10 @@
           },
           {
             "result": {
-              "duration": 3318677800,
+              "duration": 3546521300,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "seleciono o credenciado",
             "match": {
               "location": "PesquisaSteps.seleciono_o_credenciado()"
@@ -166,10 +166,10 @@
           },
           {
             "result": {
-              "duration": 41716000,
+              "duration": 278049100,
               "status": "passed"
             },
-            "line": 23,
+            "line": 24,
             "name": "Verificar perfil do credenciado",
             "match": {
               "location": "PesquisaSteps.verificoPerfilCredenciado()"
@@ -179,7 +179,7 @@
         ],
         "tags": [
           {
-            "line": 14,
+            "line": 15,
             "name": "@Pesquisa-Credenciado"
           }
         ]
@@ -189,6 +189,12 @@
     "description": "Eu como tester vou realizar uma busca no blog\r\ne uma busca e exibir o perfil de um credenciado",
     "id": "realizar-busca-do-blog-e-busca-credenciado",
     "keyword": "Funcionalidade",
-    "uri": "cenariodebusca.feature"
+    "uri": "cenariodebusca.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Pesquisa"
+      }
+    ]
   }
 ]
